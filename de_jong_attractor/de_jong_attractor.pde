@@ -11,7 +11,6 @@ void setup(){
 
 void draw(){
 
-    // 立方体、収束、曲線のパターン
     float pA = 1.90 - frameCount / 4000.0;
     float pB = 0.30 + frameCount / 500.0;
     float pC = 1.90 - frameCount / 2000.0;
@@ -22,7 +21,6 @@ void draw(){
     background(0, 0, 0, 100);
     translate(width / 2, height / 2, 0);
 
-    // パラメータ
     fill(0, 0, 100, 100);
     text("pA: ", 240, 200); text(pA, 280, 200);
     text("pB: ", 240, 220); text(pB, 280, 220);
@@ -31,7 +29,6 @@ void draw(){
     text("pE: ", 240, 280); text(pE, 280, 280);
     text("pF: ", 240, 300); text(pF, 280, 300);
 
-    // 座標系を回転
     rotateX(-frameCount * PI * 0.002);
     rotateY( frameCount * PI * 0.003);
     rotateZ( frameCount * PI * 0.002);
@@ -47,7 +44,6 @@ void draw(){
         float y = sin(pC * prevZ) - cos(pD * prevY);
         float z = sin(pE * prevX) - cos(pF * prevZ);
 
-        // 点の描画
         pushMatrix();
         translate(
             x * width / 7.0,
