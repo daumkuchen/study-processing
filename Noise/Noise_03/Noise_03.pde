@@ -42,11 +42,11 @@ void draw(){
       float gradient2 = map(y * jr, 0, loop_j, 0, 255);
       
       // color
-      //stroke(gradient2, 0, gradient1, gradient1);
-      //strokeWeight(3);
+      stroke(gradient2, 0, gradient1, gradient1);
       
       // mono
-      stroke(gradient2 + 25, gradient1);
+      //stroke(gradient2 + 25, gradient1);
+      
       strokeWeight(3);
       
       //line(x, y, bx, by);

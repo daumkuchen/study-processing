@@ -6,8 +6,8 @@ color off = color(0);
 
 void setup(){
   
-  size(101, 101);
-  frameRate(30);
+  size(601, 601);
+  //frameRate(30);
   background(0);
   set(width / 2, 0, on); // set above pixel color white
   
