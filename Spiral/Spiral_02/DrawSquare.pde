@@ -1,0 +1,10 @@
+void drawSquare(PVector[] v){
+  
+  for(int i = 0; i < 4; i++){
+    line(v[i].x,
+         v[i].y,
+         v[(i + 1) % 4].x,
+         v[(i + 1) % 4].y);
+  }
+  
+}
